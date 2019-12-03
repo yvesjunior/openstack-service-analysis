@@ -1,0 +1,100 @@
+
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_msg_id>
+	bc2458c7a2d442fe8020f8396c5bb089
+</_msg_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_request_id>
+	req-72043797-0c1c-4a7c-87f3-2bc0294c781f
+</_context_request_id>
+<_context_service_catalog>
+
+</_context_service_catalog>
+<_context_auth_token>
+	None
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	None
+</_context_user_id>
+<_reply_q>
+	reply_a8490637876045f5998af8df7daede90
+</_reply_q>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	1.9
+</version>
+<_context_timestamp>
+	2015-09-16T15:24:20.967704
+</_context_timestamp>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	None
+</_context_user>
+<method>
+	get_instance_nw_info
+</method>
+<_context_remote_address>
+	None
+</_context_remote_address>
+<_context_roles>
+
+</_context_roles>
+<args>
+	<instance_id>
+		9a5d1501-0aa2-4dcc-aee1-ce1811cbe9af
+	</instance_id>
+	<host>
+		yves-G771JM
+	</host>
+	<project_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</project_id>
+	<rxtx_factor>
+		1.0
+	</rxtx_factor>
+</args>
+<_unique_id>
+	9e3c27301665422cab5878668dff1654
+</_unique_id>
+<_context_project_name>
+	None
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	- - - - -
+</_context_user_identity>
+<_context_tenant>
+	None
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	None
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	None
+</_context_user_name></event>

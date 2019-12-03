@@ -1,0 +1,19 @@
+SUB-SERVICES & EVENT_TYPE
+nova-compute &compute.instance.create.\{start/end\}
+
+nova-compute&compute.instance.power_off.\{start/end\}
+                                         
+nova-compute&compute.instance.live_migration.pre.\{start/end\}   
+    
+nova-scheduler&scheduler.select_destinations.\{start/end\}
+ 
+nova-conductor&conductor.provider_fw_rule.\{start/end\}  
+                  
+nova-conductor&conductor.provider_fw_rule.\{start/end\} 
+
+nova-driver&libvirt.find.migration.min.data.\{start/end} 
+                                          
+nova-network&compute.allocate.network.instance.\{start/end\}  
+                   
+nova-network&compute.network.lease_fixed_ip.instance.\{start/end\}
+      

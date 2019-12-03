@@ -1,0 +1,16 @@
+SUB-SERVICES || EVENT_TYPE
+-----------------------------------------
+dhcp-agent   || network.create.{start/end}
+dhcp-agent   || network.update.{start/end}
+dhcp-agent   || network.delete.{start/end}
+dhcp-agent   || subnet.update.{start/end}
+dhcp-agent   || subnet.delete.{start/end}
+dhcp-agent   || port.delete.{start/end}
+
+l3-agent     || router.create.{start/end} 
+l3-agent     || router.remove.{start/end}
+l3-agent     || router.delete.{start/end}
+
+
+
+

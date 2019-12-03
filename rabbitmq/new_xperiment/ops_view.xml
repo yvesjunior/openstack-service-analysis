@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************************
+* Copyright (c) 2015 École Polytechnique de Montréal
+*
+* All rights reserved. This program and the accompanying materials are
+* made available under the terms of the Eclipse Public License v1.0 which
+* accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+*
+* Contributors:
+* 	Yves J. BATIONO - mail:yves-junior.bationo@polymtl.ca
+*************************************************************************** -->
+<tmfxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="stateprovider.xsd">
+	
+	<timeGraphView id="openstack.timegraph">
+		<head>
+			<analysis id="openstack.sp" />
+			<label value="OpenStack View" />
+		</head>
+		<!--regular compute ........... ActionValues -->
+		<definedValue name="ACTION_NONE" value="100" color="#FFFFFF"/>
+		<definedValue name="ACTION_CREATE" value="101" color="#0066CC"/>
+		<definedValue name="ACTION_DELETE" value="102" color="#000000"/>
+		<definedValue name="ACTION_POWER_OFF" value="103" color="#FA5858"/>
+		<definedValue name="ACTION_PAUSE" value="104" color="#F7819F"/>
+		<definedValue name="ACTION_SHUTDOWN" value="105" color="#DF0101"/>
+		<definedValue name="ACTION_REBOOT" value="106" color="#F7D358"/>
+		<definedValue name="ACTION_LIVE_MIGRATION_PRE" value="107" color="#7082F8"/>
+		<definedValue name="ACTION_LIVE_MIGRATION_POST_DEST" value="108" color="#4F5EC0"/>
+		<definedValue name="ACTION_LIVE_MIGRATION__POST" value="109" color="#0725EC"/>
+		<!-- regular compute........... StateValues  -->
+		 <definedValue name="STATE_NONE" value="200" color="#FFFFFF"/>
+		<definedValue name="STATE_BUILDING" value="201" color="#81DAF5"/>
+		<definedValue name="STATE_ACTIVE" value="202" color="#00FF00"/>
+		<definedValue name="STATE_SUSPENDED" value="203" color="#83A697"/>
+		<definedValue name="STATE_DELETED" value="204" color="#000000"/>
+		<definedValue name="STATE_PAUSED" value="205" color="#F7819F"/>
+		<definedValue name="STATE_STOPPED" value="206" color="#FA5858"/>
+		<definedValue name="STATE_MIGRATING" value="207" color="#00FF0F"/>
+		
+		<!-- scheduler notification ...........  -->
+		<definedValue name="scheduler_SELECT_DESTINATIONS" value="301" color="#0025EC"/>
+		
+		<entry path="PROJECT_ID">
+			<display type="self" />
+			<entry path="PRO/*">
+				<display type="self" />
+				<entry path="USER_ID">
+					<display type="self" />
+					<entry path="u_id/*">
+						<display type="self" />
+							<entry path="USER_action">
+								<display type="self"/>	
+							</entry>
+							<entry path="VMs">
+								<display type="self"/>	
+								<entry path="V_instance/*">
+									<display type="self"/>	
+									<entry path="VM_STATE">
+										<display type="self"/>	
+									</entry>
+								</entry>
+							</entry>	
+						
+					</entry>
+				</entry>
+			</entry>
+		</entry>
+	</timeGraphView>
+
+	<stateProvider id="openstack.sp" version="1">
+		<head>
+			<traceType id="custom.xml.trace:Custom XML:essai" />
+			<label value="OpenStack state provider" />
+		</head>
+		<!-- StateValues -->
+		<definedValue name="ACTION_NONE" value="100" />
+		<definedValue name="ACTION_CREATE" value="101" />
+		<definedValue name="ACTION_DELETE" value="102" />
+		<definedValue name="ACTION_POWER_OFF" value="103" />
+		<definedValue name="ACTION_PAUSE" value="104" />
+		<definedValue name="ACTION_SHUTDOWN" value="105" />
+		<definedValue name="ACTION_REBOOT" value="106" />
+		<definedValue name="ACTION_LIVE_MIGRATION_PRE" value="107" />
+		<definedValue name="ACTION_LIVE_MIGRATION_POST_DEST" value="108" />
+		<definedValue name="ACTION_LIVE_MIGRATION__POST" value="109" />
+		
+		<definedValue name="STATE_NONE" value="200"  />
+		<definedValue name="STATE_BUILDING" value="201" />
+		<definedValue name="STATE_ACTIVE" value="202" />
+		<definedValue name="STATE_SUSPENDED" value="203" />
+		<definedValue name="STATE_DELETED" value="204" />
+		<definedValue name="STATE_PAUSED" value="205" />
+		<definedValue name="STATE_STOPPED" value="206" />
+		<definedValue name="STATE_MIGRATING" value="207" />
+		
+		<definedValue name="scheduler_SELECT_DESTINATIONS" value="301" />
+
+		<!--from create.start to create.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.create.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_CREATE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.create.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>
+		<!--end create .......  -->
+<!--from power_off.start to power_off.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.power_off.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_POWER_OFF" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.power_off.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>
+		<!--end power_off .......  -->
+<!--from delete.start to delete.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.delete.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_DELETE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.delete.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>
+		<!--end delete .......  -->
+<!--from pause.start to pause.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.pause.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_PAUSE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.pause.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>
+		<!--end pause .......  -->
+<!--from shutdown.start to shutdown.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.shutdown.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_SHUTDOWN" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.shutdown.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>	
+		<!--end shutdown .......  -->
+<!--from reboot.start to reboot.end  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.reboot.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_REBOOT" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.reboot.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>	
+		<!--end reboot .......  -->
+<!--from live_migration.pre.start to end .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration.pre.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_LIVE_MIGRATION_PRE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration.pre.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>	
+		<!--end live_migration.pre.start to end .......  -->
+<!--from live_migration.post.dest.start to end .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration.post.dest.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_LIVE_MIGRATION_POST_DEST" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration.post.dest.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>	
+		<!--end live_migration.post.dest.start to end .......  -->
+<!--from live_migration._post.start to end .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration._post.start" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_LIVE_MIGRATION__POST" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="event_type" />
+						<stateValue type="string" value="compute.instance.live_migration._post.end" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="USER_action" />
+					<stateValue type="int" value="$ACTION_NONE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>	
+		<!--end live_migration._post.start to end .......  -->
+
+		<!-- ...........................########################.........................code for vm_state   .................############################........................-->
+		<!--from state building to state active .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="building" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_BUILDING" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="active" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_ACTIVE" />
+				</then>
+				</else>
+			</stateChange>
+		</eventHandler>
+		<!--end state build-active .......  -->
+
+
+<!--from state active to state deleted .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="active" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_ACTIVE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="deleted" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_DELETED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!--end active-deleted .......  -->
+		<!--from state active to state paused .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="active" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_ACTIVE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="paused" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_PAUSED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!--end active-paused .......  -->
+		<!--from state active to state supended .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="active" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_ACTIVE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="suspended" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_SUSPENDED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!--end active-suspended .......  -->
+		<!--from state active to state stopped .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="active" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_ACTIVE" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="stopped" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_STOPPED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!-- end active- stopped-->
+	
+		<!--from state paused to state deleted .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="paused" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_PAUSED" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="deleted" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_DELETED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!--end paused-deleted .......  -->
+		<!--from state stopped to state deleted .......  -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="stopped" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_STOPPED" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="deleted" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_DELETED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>	
+		<!--end stopped-deleted .......  -->
+		<!-- from state suspended to deleted -->
+		<eventHandler eventName="essai">
+			<stateChange>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="suspended" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_SUSPENDED" />
+				</then>
+				<else>
+				<if>
+					<condition>
+						<field name="state" />
+						<stateValue type="string" value="deleted" />
+					</condition>
+				</if>
+				<then>
+					<stateAttribute type="constant" value="PROJECT_ID" />
+					<stateAttribute type="constant" value="PRO" />
+					<stateAttribute type="eventField" value="context_project_id" />
+					<stateAttribute type="constant" value="USER_ID" />
+					<stateAttribute type="constant" value="u_id" />
+					<stateAttribute type="eventField" value="_context_user" />
+					<stateAttribute type="constant" value="VMs" />
+					<stateAttribute type="constant" value="V_instance" />
+					<stateAttribute type="eventField" value="vm_name" />
+					<stateAttribute type="constant" value="VM_STATE" />
+					<stateValue type="int" value="$STATE_DELETED" />
+				</then>
+				</else>
+			</stateChange>			
+		</eventHandler>
+		<!-- end suspended-deleted-->
+
+	</stateProvider>
+</tmfxml>

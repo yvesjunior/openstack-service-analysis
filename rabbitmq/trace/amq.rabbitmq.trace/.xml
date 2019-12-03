@@ -1,0 +1,864 @@
+
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-789e3644-b6fb-41de-9ca6-52d22ca38bfc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_service_catalog>
+
+</_context_service_catalog>
+<_context_auth_token>
+	None
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user>
+	None
+</_context_user>
+<_context_user_id>
+	None
+</_context_user_id>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	1.0
+</version>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_timestamp>
+	2015-09-16T15:24:24.061754
+</_context_timestamp>
+<method>
+	update_service_capabilities
+</method>
+<_context_remote_address>
+	None
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<args>
+	<service_name>
+		volume
+	</service_name>
+	<host>
+		yves-G771JM@lvmdriver-1
+	</host>
+	<capabilities>
+		<filter_function>
+			None
+		</filter_function>
+		<goodness_function>
+			None
+		</goodness_function>
+		<volume_backend_name>
+			lvmdriver-1
+		</volume_backend_name>
+		<driver_version>
+			3.0.0
+		</driver_version>
+		<pools>
+			<pool_name>
+				lvmdriver-1
+			</pool_name>
+			<filter_function>
+				None
+			</filter_function>
+			<allocated_capacity_gb>
+				0
+			</allocated_capacity_gb>
+			<goodness_function>
+				None
+			</goodness_function>
+			<multiattach>
+				True
+			</multiattach>
+			<provisioned_capacity_gb>
+				0.0
+			</provisioned_capacity_gb>
+			<total_volumes>
+				0
+			</total_volumes>
+			<thin_provisioning_support>
+				False
+			</thin_provisioning_support>
+			<free_capacity_gb>
+				10.01
+			</free_capacity_gb>
+			<location_info>
+				LVMVolumeDriver:yves-G771JM:stack-volumes-lvmdriver-1:default:0
+			</location_info>
+			<total_capacity_gb>
+				10.01
+			</total_capacity_gb>
+			<thick_provisioning_support>
+				True
+			</thick_provisioning_support>
+			<reserved_percentage>
+				0
+			</reserved_percentage>
+			<QoS_support>
+				False
+			</QoS_support>
+			<max_over_subscription_ratio>
+				20.0
+			</max_over_subscription_ratio>
+		</pools>
+		<vendor_name>
+			Open Source
+		</vendor_name>
+		<storage_protocol>
+			iSCSI
+		</storage_protocol>
+	</capabilities>
+</args>
+<_unique_id>
+	4b53b9d535404dbeac2860f4d35169c7
+</_unique_id>
+<_context_project_name>
+	None
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	- - - - -
+</_context_user_identity>
+<_context_tenant>
+	None
+</_context_tenant>
+<_context_project_id>
+	None
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-e643dd2c-21b5-40c2-ae2d-d80696a5ea83
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_service_catalog>
+
+</_context_service_catalog>
+<_context_auth_token>
+	None
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user>
+	None
+</_context_user>
+<_context_user_id>
+	None
+</_context_user_id>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	4.2
+</version>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_timestamp>
+	2015-09-16T15:24:27.966562
+</_context_timestamp>
+<method>
+	sync_instance_info
+</method>
+<_context_remote_address>
+	None
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<args>
+	<instance_uuids>
+		9a5d1501-0aa2-4dcc-aee1-ce1811cbe9af
+	</instance_uuids>
+	<host_name>
+		yves-G771JM
+	</host_name>
+</args>
+<_unique_id>
+	ae4fbce2ef92461681220d6d765c7f5f
+</_unique_id>
+<_context_project_name>
+	None
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	- - - - -
+</_context_user_identity>
+<_context_tenant>
+	None
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	None
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	None
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	4.2
+</version>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<method>
+	update_instance_info
+</method>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<args>
+	<host_name>
+		yves-G771JM
+	</host_name>
+	<instance_info>
+		<nova_object.version>
+			1.19
+		</nova_object.version>
+		<nova_object.namespace>
+			nova
+		</nova_object.namespace>
+		<nova_object.name>
+			InstanceList
+		</nova_object.name>
+		<nova_object.data>
+			<objects>
+				<nova_object.version>
+					1.21
+				</nova_object.version>
+				<nova_object.namespace>
+					nova
+				</nova_object.namespace>
+				<nova_object.name>
+					Instance
+				</nova_object.name>
+				<nova_object.data>
+					<vm_state>
+						active
+					</vm_state>
+					<pci_requests>
+						<nova_object.version>
+							1.1
+						</nova_object.version>
+						<nova_object.name>
+							InstancePCIRequests
+						</nova_object.name>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.data>
+							<instance_uuid>
+								792e5e51-a06d-4c5e-8ff5-11153be0739c
+							</instance_uuid>
+							<requests>
+
+							</requests>
+						</nova_object.data>
+					</pci_requests>
+					<availability_zone>
+						None
+					</availability_zone>
+					<terminated_at>
+						None
+					</terminated_at>
+					<ephemeral_gb>
+						0
+					</ephemeral_gb>
+					<instance_type_id>
+						5
+					</instance_type_id>
+					<user_data>
+						None
+					</user_data>
+					<numa_topology>
+						None
+					</numa_topology>
+					<display_description>
+						vm-13960
+					</display_description>
+					<cleaned>
+						False
+					</cleaned>
+					<vm_mode>
+						None
+					</vm_mode>
+					<flavor>
+						<nova_object.version>
+							1.1
+						</nova_object.version>
+						<nova_object.name>
+							Flavor
+						</nova_object.name>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.data>
+							<memory_mb>
+								2048
+							</memory_mb>
+							<root_gb>
+								20
+							</root_gb>
+							<deleted_at>
+								None
+							</deleted_at>
+							<name>
+								m1.small
+							</name>
+							<deleted>
+								False
+							</deleted>
+							<created_at>
+								None
+							</created_at>
+							<ephemeral_gb>
+								0
+							</ephemeral_gb>
+							<updated_at>
+								None
+							</updated_at>
+							<disabled>
+								False
+							</disabled>
+							<vcpus>
+								1
+							</vcpus>
+							<extra_specs>
+
+							</extra_specs>
+							<swap>
+								0
+							</swap>
+							<rxtx_factor>
+								1.0
+							</rxtx_factor>
+							<is_public>
+								True
+							</is_public>
+							<flavorid>
+								2
+							</flavorid>
+							<vcpu_weight>
+								0
+							</vcpu_weight>
+							<id>
+								5
+							</id>
+						</nova_object.data>
+					</flavor>
+					<deleted_at>
+						None
+					</deleted_at>
+					<reservation_id>
+						r-5gbrl4h5
+					</reservation_id>
+					<id>
+						2
+					</id>
+					<security_groups>
+						<nova_object.version>
+							1.0
+						</nova_object.version>
+						<nova_object.name>
+							SecurityGroupList
+						</nova_object.name>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.data>
+							<objects>
+								<nova_object.version>
+									1.1
+								</nova_object.version>
+								<nova_object.name>
+									SecurityGroup
+								</nova_object.name>
+								<nova_object.namespace>
+									nova
+								</nova_object.namespace>
+								<nova_object.data>
+									<deleted_at>
+										None
+									</deleted_at>
+									<user_id>
+										bfbb9a19948a475381d80d718c08f2f4
+									</user_id>
+									<description>
+										default
+									</description>
+									<deleted>
+										False
+									</deleted>
+									<created_at>
+										2015-09-16T15:20:39Z
+									</created_at>
+									<updated_at>
+										None
+									</updated_at>
+									<project_id>
+										ff97f3b224044c0eb5a3bb5d3a74033e
+									</project_id>
+									<id>
+										1
+									</id>
+									<name>
+										default
+									</name>
+								</nova_object.data>
+							</objects>
+						</nova_object.data>
+					</security_groups>
+					<disable_terminate>
+						False
+					</disable_terminate>
+					<root_device_name>
+						/dev/vda
+					</root_device_name>
+					<display_name>
+						vm-13960
+					</display_name>
+					<uuid>
+						792e5e51-a06d-4c5e-8ff5-11153be0739c
+					</uuid>
+					<default_swap_device>
+						None
+					</default_swap_device>
+					<info_cache>
+						<nova_object.version>
+							1.5
+						</nova_object.version>
+						<nova_object.name>
+							InstanceInfoCache
+						</nova_object.name>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.data>
+							<instance_uuid>
+								792e5e51-a06d-4c5e-8ff5-11153be0739c
+							</instance_uuid>
+							<deleted>
+								False
+							</deleted>
+							<created_at>
+								2015-09-16T15:24:28Z
+							</created_at>
+							<updated_at>
+								2015-09-16T15:24:30Z
+							</updated_at>
+							<network_info>
+								[{"profile": null, "ovs_interfaceid": null, "preserve_on_delete": false, "network": {"bridge": "br100", "subnets": [{"ips": [{"meta": {}, "version": 4, "type": "fixed", "floating_ips": [], "address": "10.11.12.4"}], "version": 4, "meta": {"dhcp_server": "10.11.12.3"}, "dns": [{"meta": {}, "version": 4, "type": "dns", "address": "8.8.4.4"}], "routes": [], "cidr": "10.11.12.0/24", "gateway": {"meta": {}, "version": 4, "type": "gateway", "address": "10.11.12.1"}}, {"ips": [], "version": null, "meta": {"dhcp_server": "10.11.12.3"}, "dns": [], "routes": [], "cidr": null, "gateway": {"meta": {}, "version": null, "type": "gateway", "address": null}}], "meta": {"tenant_id": null, "multi_host": true, "should_create_bridge": true}, "id": "f17b3b02-d85b-4669-92dd-894bfb0fa591", "label": "private"}, "devname": null, "vnic_type": "normal", "qbh_params": null, "meta": {}, "details": {}, "address": "fa:16:3e:4e:7e:1b", "active": false, "type": "bridge", "id": "cd2c4010-a014-47cf-9181-bb280cdf5f92", "qbg_params": null}]
+							</network_info>
+							<deleted_at>
+								None
+							</deleted_at>
+						</nova_object.data>
+					</info_cache>
+					<hostname>
+						vm-13960
+					</hostname>
+					<launched_on>
+						yves-G771JM
+					</launched_on>
+					<ec2_ids>
+						<nova_object.version>
+							1.0
+						</nova_object.version>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.name>
+							EC2Ids
+						</nova_object.name>
+						<nova_object.data>
+							<instance_id>
+								i-00000002
+							</instance_id>
+							<kernel_id>
+								aki-00000002
+							</kernel_id>
+							<ami_id>
+								ami-00000001
+							</ami_id>
+							<ramdisk_id>
+								ari-00000003
+							</ramdisk_id>
+						</nova_object.data>
+						<nova_object.changes>
+							instance_id
+							kernel_id
+							ami_id
+							ramdisk_id
+						</nova_object.changes>
+					</ec2_ids>
+					<key_data>
+						None
+					</key_data>
+					<deleted>
+						False
+					</deleted>
+					<scheduled_at>
+						None
+					</scheduled_at>
+					<power_state>
+						1
+					</power_state>
+					<key_name>
+						None
+					</key_name>
+					<default_ephemeral_device>
+						None
+					</default_ephemeral_device>
+					<progress>
+						0
+					</progress>
+					<project_id>
+						ff97f3b224044c0eb5a3bb5d3a74033e
+					</project_id>
+					<launched_at>
+						2015-09-16T15:24:31Z
+					</launched_at>
+					<metadata>
+
+					</metadata>
+					<node>
+						yves-G771JM
+					</node>
+					<pci_devices>
+						<nova_object.version>
+							1.2
+						</nova_object.version>
+						<nova_object.name>
+							PciDeviceList
+						</nova_object.name>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.data>
+							<objects>
+
+							</objects>
+						</nova_object.data>
+					</pci_devices>
+					<access_ip_v6>
+						None
+					</access_ip_v6>
+					<access_ip_v4>
+						None
+					</access_ip_v4>
+					<kernel_id>
+						038f18a7-8d75-4884-a5f2-acf19105f133
+					</kernel_id>
+					<old_flavor>
+						None
+					</old_flavor>
+					<updated_at>
+						2015-09-16T15:24:31Z
+					</updated_at>
+					<vcpu_model>
+						<nova_object.version>
+							1.0
+						</nova_object.version>
+						<nova_object.namespace>
+							nova
+						</nova_object.namespace>
+						<nova_object.name>
+							VirtCPUModel
+						</nova_object.name>
+						<nova_object.data>
+							<vendor>
+								None
+							</vendor>
+							<features>
+
+							</features>
+							<mode>
+								None
+							</mode>
+							<model>
+								None
+							</model>
+							<arch>
+								None
+							</arch>
+							<match>
+								exact
+							</match>
+							<topology>
+								<nova_object.version>
+									1.0
+								</nova_object.version>
+								<nova_object.namespace>
+									nova
+								</nova_object.namespace>
+								<nova_object.name>
+									VirtCPUTopology
+								</nova_object.name>
+								<nova_object.data>
+									<cores>
+										1
+									</cores>
+									<threads>
+										1
+									</threads>
+									<sockets>
+										1
+									</sockets>
+								</nova_object.data>
+								<nova_object.changes>
+									cores
+									threads
+									sockets
+								</nova_object.changes>
+							</topology>
+						</nova_object.data>
+						<nova_object.changes>
+							vendor
+							features
+							model
+							topology
+							arch
+							match
+							mode
+						</nova_object.changes>
+					</vcpu_model>
+					<root_gb>
+						20
+					</root_gb>
+					<user_id>
+						bfbb9a19948a475381d80d718c08f2f4
+					</user_id>
+					<system_metadata>
+						<image_kernel_id>
+							038f18a7-8d75-4884-a5f2-acf19105f133
+						</image_kernel_id>
+						<image_min_disk>
+							20
+						</image_min_disk>
+						<image_ramdisk_id>
+							9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+						</image_ramdisk_id>
+						<image_container_format>
+							ami
+						</image_container_format>
+						<image_min_ram>
+							0
+						</image_min_ram>
+						<image_disk_format>
+							ami
+						</image_disk_format>
+						<image_base_image_ref>
+							18ff06b7-e570-400f-a12f-c8807c67346b
+						</image_base_image_ref>
+					</system_metadata>
+					<task_state>
+						None
+					</task_state>
+					<shutdown_terminate>
+						False
+					</shutdown_terminate>
+					<cell_name>
+						None
+					</cell_name>
+					<ephemeral_key_uuid>
+						None
+					</ephemeral_key_uuid>
+					<locked>
+						False
+					</locked>
+					<created_at>
+						2015-09-16T15:24:28Z
+					</created_at>
+					<locked_by>
+						None
+					</locked_by>
+					<launch_index>
+						0
+					</launch_index>
+					<host>
+						yves-G771JM
+					</host>
+					<memory_mb>
+						2048
+					</memory_mb>
+					<vcpus>
+						1
+					</vcpus>
+					<image_ref>
+						18ff06b7-e570-400f-a12f-c8807c67346b
+					</image_ref>
+					<architecture>
+						None
+					</architecture>
+					<auto_disk_config>
+						False
+					</auto_disk_config>
+					<os_type>
+						None
+					</os_type>
+					<config_drive>
+						True
+					</config_drive>
+					<ramdisk_id>
+						9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+					</ramdisk_id>
+					<new_flavor>
+						None
+					</new_flavor>
+				</nova_object.data>
+				<nova_object.changes>
+					vcpu_model
+					ec2_ids
+				</nova_object.changes>
+			</objects>
+		</nova_object.data>
+		<nova_object.changes>
+			objects
+		</nova_object.changes>
+	</instance_info>
+</args>
+<_unique_id>
+	a4cec46c02ee4c9fafe670cd7968177e
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>

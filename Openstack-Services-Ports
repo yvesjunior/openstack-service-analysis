@@ -1,0 +1,73 @@
+-----------------Default ports that openstack components use-----------
+
+
+Block Storage (cinder)			8776
+
+Compute (nova) endpoints		8774
+
+Compute API (nova-api)			8773,8775
+
+Compute ports for access		5900-5999 
+to virtual machine consoles
+
+Compute VNC proxy for browsers		6080
+( openstack-nova-novncproxy)
+
+Compute VNC proxy for traditional	6081
+VNC clients (openstack-nova-xvpvncproxy)
+
+Proxy port for HTML5 console used 	6082
+by Compute service
+
+Data processing service 		8386
+(sahara) endpoint
+
+Identity service (keystone) 		35357
+administrative endpoint
+
+Identity service public endpoint	5000
+
+Image service (glance) API		9292
+
+Image service registry			9191
+
+Networking (neutron)			9696
+
+Object Storage (swift)			6000, 6001, 6002
+
+Orchestration (heat) endpoint		8004
+
+Orchestration AWS 			8000
+CloudFormation-compatible API 
+(openstack-heat-api-cfn)
+
+Orchestration AWS 			8003
+CloudWatch-compatible API 
+(openstack-heat-api-cloudwatch)
+
+Telemetry (ceilometer)			8777
+
+
+-------------Default ports that secondary services related to openstack components use----------
+
+HTTP					80
+
+HTTP					8080
+
+HTTPS					443
+
+rsync					873
+
+iSCSI target				3260
+
+MySQL database service			3306
+
+Message Broker (AMQP traffic)		5672
+
+
+
+
+
+
+
+

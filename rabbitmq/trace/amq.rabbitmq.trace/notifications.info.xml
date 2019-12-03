@@ -1,0 +1,3571 @@
+
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		scheduling
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		None
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		None
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28.485549+00:00
+	</created_at>
+	<old_task_state>
+		scheduling
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		scheduling
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:28.623692
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	api.yves-G771JM
+</publisher_id>
+<message_id>
+	f583a95f-09dd-45fb-9e91-1141cba82d25
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:28.627866
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	940d1f4f86dd487e88783000d85efdc0
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	scheduler.select_destinations.start
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<request_spec>
+		<instance_properties>
+			<vm_state>
+				building
+			</vm_state>
+			<pci_requests>
+				<instance_uuid>
+					792e5e51-a06d-4c5e-8ff5-11153be0739c
+				</instance_uuid>
+				<requests>
+
+				</requests>
+			</pci_requests>
+			<availability_zone>
+				None
+			</availability_zone>
+			<terminated_at>
+				None
+			</terminated_at>
+			<ephemeral_gb>
+				0
+			</ephemeral_gb>
+			<instance_type_id>
+				5
+			</instance_type_id>
+			<user_data>
+				None
+			</user_data>
+			<numa_topology>
+				None
+			</numa_topology>
+			<cleaned>
+				False
+			</cleaned>
+			<vm_mode>
+				None
+			</vm_mode>
+			<flavor>
+				<disabled>
+					False
+				</disabled>
+				<root_gb>
+					20
+				</root_gb>
+				<name>
+					m1.small
+				</name>
+				<flavorid>
+					2
+				</flavorid>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					None
+				</created_at>
+				<ephemeral_gb>
+					0
+				</ephemeral_gb>
+				<updated_at>
+					None
+				</updated_at>
+				<memory_mb>
+					2048
+				</memory_mb>
+				<vcpus>
+					1
+				</vcpus>
+				<extra_specs>
+
+				</extra_specs>
+				<swap>
+					0
+				</swap>
+				<rxtx_factor>
+					1.0
+				</rxtx_factor>
+				<is_public>
+					True
+				</is_public>
+				<deleted_at>
+					None
+				</deleted_at>
+				<vcpu_weight>
+					0
+				</vcpu_weight>
+				<id>
+					5
+				</id>
+			</flavor>
+			<deleted_at>
+				None
+			</deleted_at>
+			<reservation_id>
+				r-5gbrl4h5
+			</reservation_id>
+			<id>
+				2
+			</id>
+			<security_groups>
+				<project_id>
+					ff97f3b224044c0eb5a3bb5d3a74033e
+				</project_id>
+				<user_id>
+					bfbb9a19948a475381d80d718c08f2f4
+				</user_id>
+				<description>
+					default
+				</description>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					2015-09-16T15:20:39.000000
+				</created_at>
+				<updated_at>
+					None
+				</updated_at>
+				<deleted_at>
+					None
+				</deleted_at>
+				<id>
+					1
+				</id>
+				<name>
+					default
+				</name>
+			</security_groups>
+			<disable_terminate>
+				False
+			</disable_terminate>
+			<display_name>
+				vm-13960
+			</display_name>
+			<uuid>
+				792e5e51-a06d-4c5e-8ff5-11153be0739c
+			</uuid>
+			<default_swap_device>
+				None
+			</default_swap_device>
+			<info_cache>
+				<instance_uuid>
+					792e5e51-a06d-4c5e-8ff5-11153be0739c
+				</instance_uuid>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					2015-09-16T15:24:28.000000
+				</created_at>
+				<updated_at>
+					None
+				</updated_at>
+				<network_info>
+
+				</network_info>
+				<deleted_at>
+					None
+				</deleted_at>
+			</info_cache>
+			<hostname>
+				vm-13960
+			</hostname>
+			<launched_on>
+				None
+			</launched_on>
+			<display_description>
+				vm-13960
+			</display_description>
+			<key_data>
+				None
+			</key_data>
+			<kernel_id>
+				038f18a7-8d75-4884-a5f2-acf19105f133
+			</kernel_id>
+			<power_state>
+				0
+			</power_state>
+			<default_ephemeral_device>
+				None
+			</default_ephemeral_device>
+			<progress>
+				0
+			</progress>
+			<old_flavor>
+				None
+			</old_flavor>
+			<project_id>
+				ff97f3b224044c0eb5a3bb5d3a74033e
+			</project_id>
+			<launched_at>
+				None
+			</launched_at>
+			<config_drive>
+				
+			</config_drive>
+			<node>
+				None
+			</node>
+			<ramdisk_id>
+				9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+			</ramdisk_id>
+			<access_ip_v6>
+				None
+			</access_ip_v6>
+			<access_ip_v4>
+				None
+			</access_ip_v4>
+			<deleted>
+				False
+			</deleted>
+			<key_name>
+				None
+			</key_name>
+			<updated_at>
+				None
+			</updated_at>
+			<host>
+				None
+			</host>
+			<ephemeral_key_uuid>
+				None
+			</ephemeral_key_uuid>
+			<architecture>
+				None
+			</architecture>
+			<user_id>
+				bfbb9a19948a475381d80d718c08f2f4
+			</user_id>
+			<system_metadata>
+				<image_kernel_id>
+					038f18a7-8d75-4884-a5f2-acf19105f133
+				</image_kernel_id>
+				<instance_type_memory_mb>
+					2048
+				</instance_type_memory_mb>
+				<instance_type_swap>
+					0
+				</instance_type_swap>
+				<instance_type_vcpu_weight>
+					0
+				</instance_type_vcpu_weight>
+				<instance_type_root_gb>
+					20
+				</instance_type_root_gb>
+				<instance_type_id>
+					5
+				</instance_type_id>
+				<image_ramdisk_id>
+					9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+				</image_ramdisk_id>
+				<instance_type_name>
+					m1.small
+				</instance_type_name>
+				<instance_type_ephemeral_gb>
+					0
+				</instance_type_ephemeral_gb>
+				<instance_type_rxtx_factor>
+					1.0
+				</instance_type_rxtx_factor>
+				<image_disk_format>
+					ami
+				</image_disk_format>
+				<instance_type_flavorid>
+					2
+				</instance_type_flavorid>
+				<instance_type_vcpus>
+					1
+				</instance_type_vcpus>
+				<image_container_format>
+					ami
+				</image_container_format>
+				<image_min_ram>
+					0
+				</image_min_ram>
+				<image_min_disk>
+					20
+				</image_min_disk>
+				<image_base_image_ref>
+					18ff06b7-e570-400f-a12f-c8807c67346b
+				</image_base_image_ref>
+			</system_metadata>
+			<task_state>
+				scheduling
+			</task_state>
+			<shutdown_terminate>
+				False
+			</shutdown_terminate>
+			<cell_name>
+				None
+			</cell_name>
+			<root_gb>
+				20
+			</root_gb>
+			<locked>
+				False
+			</locked>
+			<name>
+				instance-00000002
+			</name>
+			<created_at>
+				2015-09-16T15:24:28.000000
+			</created_at>
+			<locked_by>
+				None
+			</locked_by>
+			<launch_index>
+				0
+			</launch_index>
+			<metadata>
+
+			</metadata>
+			<memory_mb>
+				2048
+			</memory_mb>
+			<vcpus>
+				1
+			</vcpus>
+			<image_ref>
+				18ff06b7-e570-400f-a12f-c8807c67346b
+			</image_ref>
+			<root_device_name>
+				None
+			</root_device_name>
+			<auto_disk_config>
+				False
+			</auto_disk_config>
+			<os_type>
+				None
+			</os_type>
+			<scheduled_at>
+				None
+			</scheduled_at>
+			<new_flavor>
+				None
+			</new_flavor>
+		</instance_properties>
+		<instance_type>
+			<disabled>
+				False
+			</disabled>
+			<root_gb>
+				20
+			</root_gb>
+			<name>
+				m1.small
+			</name>
+			<flavorid>
+				2
+			</flavorid>
+			<deleted>
+				False
+			</deleted>
+			<created_at>
+				None
+			</created_at>
+			<ephemeral_gb>
+				0
+			</ephemeral_gb>
+			<updated_at>
+				None
+			</updated_at>
+			<memory_mb>
+				2048
+			</memory_mb>
+			<vcpus>
+				1
+			</vcpus>
+			<extra_specs>
+
+			</extra_specs>
+			<swap>
+				0
+			</swap>
+			<rxtx_factor>
+				1.0
+			</rxtx_factor>
+			<is_public>
+				True
+			</is_public>
+			<deleted_at>
+				None
+			</deleted_at>
+			<vcpu_weight>
+				0
+			</vcpu_weight>
+			<id>
+				5
+			</id>
+		</instance_type>
+		<image>
+			<status>
+				active
+			</status>
+			<properties>
+				<kernel_id>
+					038f18a7-8d75-4884-a5f2-acf19105f133
+				</kernel_id>
+				<ramdisk_id>
+					9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+				</ramdisk_id>
+			</properties>
+			<name>
+				cirros-0.3.4-x86_64-uec
+			</name>
+			<deleted>
+				False
+			</deleted>
+			<container_format>
+				ami
+			</container_format>
+			<created_at>
+				2015-09-16T15:13:40.000000
+			</created_at>
+			<disk_format>
+				ami
+			</disk_format>
+			<updated_at>
+				2015-09-16T15:13:40.000000
+			</updated_at>
+			<id>
+				18ff06b7-e570-400f-a12f-c8807c67346b
+			</id>
+			<owner>
+				ff97f3b224044c0eb5a3bb5d3a74033e
+			</owner>
+			<checksum>
+				eb9139e4942121f22bbc2afc0400b2a4
+			</checksum>
+			<min_disk>
+				0
+			</min_disk>
+			<is_public>
+				True
+			</is_public>
+			<deleted_at>
+				None
+			</deleted_at>
+			<min_ram>
+				0
+			</min_ram>
+			<size>
+				25165824
+			</size>
+		</image>
+		<num_instances>
+			1
+		</num_instances>
+	</request_spec>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	scheduler.yves-G771JM
+</publisher_id>
+<message_id>
+	fcb85edc-2de3-40d6-b419-8f299dd0047c
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:28.787631
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	4552672238dc434bb70f517f643fc289
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	scheduler.select_destinations.end
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<request_spec>
+		<instance_properties>
+			<vm_state>
+				building
+			</vm_state>
+			<pci_requests>
+				<instance_uuid>
+					792e5e51-a06d-4c5e-8ff5-11153be0739c
+				</instance_uuid>
+				<requests>
+
+				</requests>
+			</pci_requests>
+			<availability_zone>
+				None
+			</availability_zone>
+			<terminated_at>
+				None
+			</terminated_at>
+			<ephemeral_gb>
+				0
+			</ephemeral_gb>
+			<instance_type_id>
+				5
+			</instance_type_id>
+			<user_data>
+				None
+			</user_data>
+			<numa_topology>
+				None
+			</numa_topology>
+			<cleaned>
+				False
+			</cleaned>
+			<vm_mode>
+				None
+			</vm_mode>
+			<flavor>
+				<disabled>
+					False
+				</disabled>
+				<root_gb>
+					20
+				</root_gb>
+				<name>
+					m1.small
+				</name>
+				<flavorid>
+					2
+				</flavorid>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					None
+				</created_at>
+				<ephemeral_gb>
+					0
+				</ephemeral_gb>
+				<updated_at>
+					None
+				</updated_at>
+				<memory_mb>
+					2048
+				</memory_mb>
+				<vcpus>
+					1
+				</vcpus>
+				<extra_specs>
+
+				</extra_specs>
+				<swap>
+					0
+				</swap>
+				<rxtx_factor>
+					1.0
+				</rxtx_factor>
+				<is_public>
+					True
+				</is_public>
+				<deleted_at>
+					None
+				</deleted_at>
+				<vcpu_weight>
+					0
+				</vcpu_weight>
+				<id>
+					5
+				</id>
+			</flavor>
+			<deleted_at>
+				None
+			</deleted_at>
+			<reservation_id>
+				r-5gbrl4h5
+			</reservation_id>
+			<id>
+				2
+			</id>
+			<security_groups>
+				<project_id>
+					ff97f3b224044c0eb5a3bb5d3a74033e
+				</project_id>
+				<user_id>
+					bfbb9a19948a475381d80d718c08f2f4
+				</user_id>
+				<description>
+					default
+				</description>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					2015-09-16T15:20:39.000000
+				</created_at>
+				<updated_at>
+					None
+				</updated_at>
+				<deleted_at>
+					None
+				</deleted_at>
+				<id>
+					1
+				</id>
+				<name>
+					default
+				</name>
+			</security_groups>
+			<disable_terminate>
+				False
+			</disable_terminate>
+			<display_name>
+				vm-13960
+			</display_name>
+			<uuid>
+				792e5e51-a06d-4c5e-8ff5-11153be0739c
+			</uuid>
+			<default_swap_device>
+				None
+			</default_swap_device>
+			<info_cache>
+				<instance_uuid>
+					792e5e51-a06d-4c5e-8ff5-11153be0739c
+				</instance_uuid>
+				<deleted>
+					False
+				</deleted>
+				<created_at>
+					2015-09-16T15:24:28.000000
+				</created_at>
+				<updated_at>
+					None
+				</updated_at>
+				<network_info>
+
+				</network_info>
+				<deleted_at>
+					None
+				</deleted_at>
+			</info_cache>
+			<hostname>
+				vm-13960
+			</hostname>
+			<launched_on>
+				None
+			</launched_on>
+			<display_description>
+				vm-13960
+			</display_description>
+			<key_data>
+				None
+			</key_data>
+			<kernel_id>
+				038f18a7-8d75-4884-a5f2-acf19105f133
+			</kernel_id>
+			<power_state>
+				0
+			</power_state>
+			<default_ephemeral_device>
+				None
+			</default_ephemeral_device>
+			<progress>
+				0
+			</progress>
+			<old_flavor>
+				None
+			</old_flavor>
+			<project_id>
+				ff97f3b224044c0eb5a3bb5d3a74033e
+			</project_id>
+			<launched_at>
+				None
+			</launched_at>
+			<config_drive>
+				
+			</config_drive>
+			<node>
+				None
+			</node>
+			<ramdisk_id>
+				9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+			</ramdisk_id>
+			<access_ip_v6>
+				None
+			</access_ip_v6>
+			<access_ip_v4>
+				None
+			</access_ip_v4>
+			<deleted>
+				False
+			</deleted>
+			<key_name>
+				None
+			</key_name>
+			<updated_at>
+				None
+			</updated_at>
+			<host>
+				None
+			</host>
+			<ephemeral_key_uuid>
+				None
+			</ephemeral_key_uuid>
+			<architecture>
+				None
+			</architecture>
+			<user_id>
+				bfbb9a19948a475381d80d718c08f2f4
+			</user_id>
+			<system_metadata>
+				<image_kernel_id>
+					038f18a7-8d75-4884-a5f2-acf19105f133
+				</image_kernel_id>
+				<instance_type_memory_mb>
+					2048
+				</instance_type_memory_mb>
+				<instance_type_swap>
+					0
+				</instance_type_swap>
+				<instance_type_vcpu_weight>
+					0
+				</instance_type_vcpu_weight>
+				<instance_type_root_gb>
+					20
+				</instance_type_root_gb>
+				<instance_type_id>
+					5
+				</instance_type_id>
+				<image_ramdisk_id>
+					9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+				</image_ramdisk_id>
+				<instance_type_name>
+					m1.small
+				</instance_type_name>
+				<instance_type_ephemeral_gb>
+					0
+				</instance_type_ephemeral_gb>
+				<instance_type_rxtx_factor>
+					1.0
+				</instance_type_rxtx_factor>
+				<image_disk_format>
+					ami
+				</image_disk_format>
+				<instance_type_flavorid>
+					2
+				</instance_type_flavorid>
+				<instance_type_vcpus>
+					1
+				</instance_type_vcpus>
+				<image_container_format>
+					ami
+				</image_container_format>
+				<image_min_ram>
+					0
+				</image_min_ram>
+				<image_min_disk>
+					20
+				</image_min_disk>
+				<image_base_image_ref>
+					18ff06b7-e570-400f-a12f-c8807c67346b
+				</image_base_image_ref>
+			</system_metadata>
+			<task_state>
+				scheduling
+			</task_state>
+			<shutdown_terminate>
+				False
+			</shutdown_terminate>
+			<cell_name>
+				None
+			</cell_name>
+			<root_gb>
+				20
+			</root_gb>
+			<locked>
+				False
+			</locked>
+			<name>
+				instance-00000002
+			</name>
+			<created_at>
+				2015-09-16T15:24:28.000000
+			</created_at>
+			<locked_by>
+				None
+			</locked_by>
+			<launch_index>
+				0
+			</launch_index>
+			<metadata>
+
+			</metadata>
+			<memory_mb>
+				2048
+			</memory_mb>
+			<vcpus>
+				1
+			</vcpus>
+			<image_ref>
+				18ff06b7-e570-400f-a12f-c8807c67346b
+			</image_ref>
+			<root_device_name>
+				None
+			</root_device_name>
+			<auto_disk_config>
+				False
+			</auto_disk_config>
+			<os_type>
+				None
+			</os_type>
+			<scheduled_at>
+				None
+			</scheduled_at>
+			<new_flavor>
+				None
+			</new_flavor>
+		</instance_properties>
+		<instance_type>
+			<disabled>
+				False
+			</disabled>
+			<root_gb>
+				20
+			</root_gb>
+			<name>
+				m1.small
+			</name>
+			<flavorid>
+				2
+			</flavorid>
+			<deleted>
+				False
+			</deleted>
+			<created_at>
+				None
+			</created_at>
+			<ephemeral_gb>
+				0
+			</ephemeral_gb>
+			<updated_at>
+				None
+			</updated_at>
+			<memory_mb>
+				2048
+			</memory_mb>
+			<vcpus>
+				1
+			</vcpus>
+			<extra_specs>
+
+			</extra_specs>
+			<swap>
+				0
+			</swap>
+			<rxtx_factor>
+				1.0
+			</rxtx_factor>
+			<is_public>
+				True
+			</is_public>
+			<deleted_at>
+				None
+			</deleted_at>
+			<vcpu_weight>
+				0
+			</vcpu_weight>
+			<id>
+				5
+			</id>
+		</instance_type>
+		<image>
+			<status>
+				active
+			</status>
+			<properties>
+				<kernel_id>
+					038f18a7-8d75-4884-a5f2-acf19105f133
+				</kernel_id>
+				<ramdisk_id>
+					9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+				</ramdisk_id>
+			</properties>
+			<name>
+				cirros-0.3.4-x86_64-uec
+			</name>
+			<deleted>
+				False
+			</deleted>
+			<container_format>
+				ami
+			</container_format>
+			<created_at>
+				2015-09-16T15:13:40.000000
+			</created_at>
+			<disk_format>
+				ami
+			</disk_format>
+			<updated_at>
+				2015-09-16T15:13:40.000000
+			</updated_at>
+			<id>
+				18ff06b7-e570-400f-a12f-c8807c67346b
+			</id>
+			<owner>
+				ff97f3b224044c0eb5a3bb5d3a74033e
+			</owner>
+			<checksum>
+				eb9139e4942121f22bbc2afc0400b2a4
+			</checksum>
+			<min_disk>
+				0
+			</min_disk>
+			<is_public>
+				True
+			</is_public>
+			<deleted_at>
+				None
+			</deleted_at>
+			<min_ram>
+				0
+			</min_ram>
+			<size>
+				25165824
+			</size>
+		</image>
+		<num_instances>
+			1
+		</num_instances>
+	</request_spec>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	scheduler.yves-G771JM
+</publisher_id>
+<message_id>
+	64a52d8a-9c46-4fc0-8ef5-49dc0bcabd2a
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:28.800294
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	19d0091c1efa4f44bff45c09ae0ae25f
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		None
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		None
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		scheduling
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		None
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:29.052481
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	7af2ed8e-e1ca-431f-8ddf-ecf577c1a21f
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:29.055106
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	904b382562864218b308f99b6000e7d2
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.create.start
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		None
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<image_name>
+		cirros-0.3.4-x86_64-uec
+	</image_name>
+	<host>
+		None
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	c2ff2f4e-cca2-4057-a849-7ce4b4d3d111
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:29.061258
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	983dc0602a014cb580317af8dba98a16
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		None
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		None
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:29.227671
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	08307ecc-26ba-422d-8c37-a5b789ef2090
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:29.230181
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	0607a24716544651a578bacac4513117
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		networking
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		networking
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		networking
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:29.470411
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	8cd9d89b-8ba1-4bc3-a984-f7485de38b0b
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:29.473129
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	b9a0a78335d04b1a8e1955c723aefa6a
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		block_device_mapping
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		networking
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		block_device_mapping
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:29.839204
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	0572c314-6aa0-4b40-a2d8-9885f2e031cb
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:29.842554
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	2db24ee90161479e949262d8f852e355
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		spawning
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		building
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		block_device_mapping
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		spawning
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:30.039688
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	db625db6-53b1-46b1-96b2-6fa00a318a02
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:30.042718
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	391988dfbedd4aa89b1cd119567951b9
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.update
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<bandwidth>
+
+	</bandwidth>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		active
+	</state>
+	<old_state>
+		building
+	</old_state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		2015-09-16T15:24:31.000000
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<audit_period_beginning>
+		2015-09-16T15:00:00.000000
+	</audit_period_beginning>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<old_task_state>
+		spawning
+	</old_task_state>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<new_task_state>
+		None
+	</new_task_state>
+	<audit_period_ending>
+		2015-09-16T15:24:31.956958
+	</audit_period_ending>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	218dd0bc-66a1-4d92-82f2-9cc7bbed2307
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:31.959807
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	372e14012410404dbb6611ba18a5611e
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<event_type>
+	compute.instance.create.end
+</event_type>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<payload>
+	<state_description>
+		
+	</state_description>
+	<availability_zone>
+		None
+	</availability_zone>
+	<terminated_at>
+		
+	</terminated_at>
+	<ephemeral_gb>
+		0
+	</ephemeral_gb>
+	<instance_type_id>
+		5
+	</instance_type_id>
+	<message>
+		Success
+	</message>
+	<deleted_at>
+		
+	</deleted_at>
+	<reservation_id>
+		r-5gbrl4h5
+	</reservation_id>
+	<memory_mb>
+		2048
+	</memory_mb>
+	<display_name>
+		vm-13960
+	</display_name>
+	<fixed_ips>
+		<version>
+			4
+		</version>
+		<vif_mac>
+			fa:16:3e:4e:7e:1b
+		</vif_mac>
+		<floating_ips>
+
+		</floating_ips>
+		<label>
+			private
+		</label>
+		<meta>
+
+		</meta>
+		<address>
+			10.11.12.4
+		</address>
+		<type>
+			fixed
+		</type>
+	</fixed_ips>
+	<hostname>
+		vm-13960
+	</hostname>
+	<state>
+		active
+	</state>
+	<progress>
+		
+	</progress>
+	<launched_at>
+		2015-09-16T15:24:31.778665
+	</launched_at>
+	<metadata>
+
+	</metadata>
+	<node>
+		yves-G771JM
+	</node>
+	<ramdisk_id>
+		9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+	</ramdisk_id>
+	<access_ip_v6>
+		None
+	</access_ip_v6>
+	<disk_gb>
+		20
+	</disk_gb>
+	<access_ip_v4>
+		None
+	</access_ip_v4>
+	<kernel_id>
+		038f18a7-8d75-4884-a5f2-acf19105f133
+	</kernel_id>
+	<host>
+		yves-G771JM
+	</host>
+	<user_id>
+		bfbb9a19948a475381d80d718c08f2f4
+	</user_id>
+	<image_ref_url>
+		http://192.168.0.102:9292/images/18ff06b7-e570-400f-a12f-c8807c67346b
+	</image_ref_url>
+	<cell_name>
+		
+	</cell_name>
+	<root_gb>
+		20
+	</root_gb>
+	<tenant_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</tenant_id>
+	<created_at>
+		2015-09-16 15:24:28+00:00
+	</created_at>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<instance_type>
+		m1.small
+	</instance_type>
+	<vcpus>
+		1
+	</vcpus>
+	<image_meta>
+		<kernel_id>
+			038f18a7-8d75-4884-a5f2-acf19105f133
+		</kernel_id>
+		<container_format>
+			ami
+		</container_format>
+		<min_ram>
+			0
+		</min_ram>
+		<ramdisk_id>
+			9959ba7a-acc5-4a1c-b366-8241cbbc3cb9
+		</ramdisk_id>
+		<disk_format>
+			ami
+		</disk_format>
+		<min_disk>
+			20
+		</min_disk>
+		<base_image_ref>
+			18ff06b7-e570-400f-a12f-c8807c67346b
+		</base_image_ref>
+	</image_meta>
+	<architecture>
+		None
+	</architecture>
+	<os_type>
+		None
+	</os_type>
+	<instance_flavor_id>
+		2
+	</instance_flavor_id>
+</payload>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<priority>
+	INFO
+</priority>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<publisher_id>
+	compute.yves-G771JM
+</publisher_id>
+<message_id>
+	f9b7b27a-3524-4fab-9310-aca38b063fa9
+</message_id>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<timestamp>
+	2015-09-16 15:24:31.975550
+</timestamp>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_unique_id>
+	88f6d34a29574f0cbcc4eed43fec7ca8
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>

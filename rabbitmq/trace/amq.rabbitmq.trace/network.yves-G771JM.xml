@@ -1,0 +1,232 @@
+
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_msg_id>
+	673621fdb1634f6d87c77b399736a7f6
+</_msg_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_request_id>
+	req-ba9ff601-04cc-4889-810f-812f73e1f7dc
+</_context_request_id>
+<_context_service_catalog>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v1/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volume
+	</type>
+	<name>
+		cinder
+	</name>
+	<endpoints>
+		<adminURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</adminURL>
+		<region>
+			RegionOne
+		</region>
+		<internalURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</internalURL>
+		<publicURL>
+			http://localhost:8776/v2/ff97f3b224044c0eb5a3bb5d3a74033e
+		</publicURL>
+	</endpoints>
+	<type>
+		volumev2
+	</type>
+	<name>
+		cinderv2
+	</name>
+</_context_service_catalog>
+<_context_auth_token>
+	a5a9b0cdf84345af89bd19f18d584b83
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user_id>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user_id>
+<_reply_q>
+	reply_a8490637876045f5998af8df7daede90
+</_reply_q>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	1.13
+</version>
+<_context_timestamp>
+	2015-09-16T15:24:28.249270
+</_context_timestamp>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_user>
+	bfbb9a19948a475381d80d718c08f2f4
+</_context_user>
+<method>
+	allocate_for_instance
+</method>
+<_context_remote_address>
+	127.0.0.1
+</_context_remote_address>
+<_context_roles>
+	admin
+</_context_roles>
+<args>
+	<vpn>
+		False
+	</vpn>
+	<requested_networks>
+		None
+	</requested_networks>
+	<instance_id>
+		792e5e51-a06d-4c5e-8ff5-11153be0739c
+	</instance_id>
+	<host>
+		yves-G771JM
+	</host>
+	<rxtx_factor>
+		1.0
+	</rxtx_factor>
+	<macs>
+		None
+	</macs>
+	<project_id>
+		ff97f3b224044c0eb5a3bb5d3a74033e
+	</project_id>
+</args>
+<_unique_id>
+	07a4040ad806427f946677482ba42642
+</_unique_id>
+<_context_project_name>
+	admin
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	bfbb9a19948a475381d80d718c08f2f4 ff97f3b224044c0eb5a3bb5d3a74033e - - -
+</_context_user_identity>
+<_context_tenant>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	ff97f3b224044c0eb5a3bb5d3a74033e
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	admin
+</_context_user_name></event>
+
+<event><_context_domain>
+	None
+</_context_domain>
+<_context_request_id>
+	req-82bc59e3-0961-4123-9e26-17bc2f89a4bb
+</_context_request_id>
+<_context_quota_class>
+	None
+</_context_quota_class>
+<_context_service_catalog>
+
+</_context_service_catalog>
+<_context_auth_token>
+	None
+</_context_auth_token>
+<_context_resource_uuid>
+	None
+</_context_resource_uuid>
+<_context_user>
+	None
+</_context_user>
+<_context_user_id>
+	None
+</_context_user_id>
+<_context_show_deleted>
+	False
+</_context_show_deleted>
+<_context_is_admin>
+	True
+</_context_is_admin>
+<version>
+	1.0
+</version>
+<_context_project_domain>
+	None
+</_context_project_domain>
+<_context_timestamp>
+	2015-09-16T15:24:36.872014
+</_context_timestamp>
+<method>
+	lease_fixed_ip
+</method>
+<_context_remote_address>
+	None
+</_context_remote_address>
+<_context_roles>
+
+</_context_roles>
+<args>
+	<address>
+		10.11.12.4
+	</address>
+</args>
+<_unique_id>
+	7b1027a9505949749c233ffe0abe00e4
+</_unique_id>
+<_context_project_name>
+	None
+</_context_project_name>
+<_context_read_deleted>
+	no
+</_context_read_deleted>
+<_context_user_identity>
+	- - - - -
+</_context_user_identity>
+<_context_tenant>
+	None
+</_context_tenant>
+<_context_instance_lock_checked>
+	False
+</_context_instance_lock_checked>
+<_context_project_id>
+	None
+</_context_project_id>
+<_context_read_only>
+	False
+</_context_read_only>
+<_context_user_domain>
+	None
+</_context_user_domain>
+<_context_user_name>
+	None
+</_context_user_name></event>

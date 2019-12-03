@@ -1,0 +1,8 @@
+volume.create.start                
+volume.delete.start           
+volume.attach.start                     
+volume.detach.start                      
+volume.migrate.start                      
+volume.resize.start                        
+snapshot.create.start                      
+snapshot.delete.start

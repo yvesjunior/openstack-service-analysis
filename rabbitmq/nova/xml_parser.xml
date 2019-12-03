@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CustomXMLTraceDefinitionList>
+
+
+<Definition category="Custom XML" name="essai">
+<TimeStampOutputFormat>yyyy-MM-dd HH:mm:ss.SSSSSS</TimeStampOutputFormat>
+<InputElement name="root">
+<InputElement logentry="true" name="event">
+<InputData action="0" format="" name="Ignore"/>
+<InputElement logentry="true" name="_context_domain">
+<InputData action="0" format="" name="_context_domain"/>
+</InputElement>
+<InputElement logentry="true" name="_context_request_id">
+<InputData action="0" format="" name="_context_request_id"/>
+</InputElement>
+<InputElement logentry="true" name="_context_quota_class">
+<InputData action="0" format="" name="_context_quota_class"/>
+</InputElement>
+<InputElement logentry="true" name="event_type">
+<InputData action="0" format="" name="event_type"/>
+</InputElement>
+<InputElement logentry="true" name="_context_service_catalog">
+<InputData action="0" format="" name="Ignore"/>
+<InputElement logentry="true" name="endpoints">
+<InputData action="0" format="" name="Ignore"/>
+<InputElement logentry="true" name="adminURL">
+<InputData action="0" format="" name="adminURL"/>
+</InputElement>
+<InputElement logentry="true" name="region">
+<InputData action="0" format="" name="region"/>
+</InputElement>
+<InputElement logentry="true" name="internalURL">
+<InputData action="0" format="" name="internalURL"/>
+</InputElement>
+<InputElement logentry="true" name="publicURL">
+<InputData action="0" format="" name="publicURL"/>
+</InputElement>
+</InputElement>
+<InputElement logentry="true" name="type">
+<InputData action="0" format="" name="type"/>
+</InputElement>
+<InputElement logentry="true" name="name">
+<InputData action="0" format="" name="name"/>
+</InputElement>
+</InputElement>
+<InputElement logentry="true" name="_context_auth_token">
+<InputData action="0" format="" name="_context_auth_token"/>
+</InputElement>
+<InputElement logentry="true" name="_context_resource_uuid">
+<InputData action="0" format="" name="_context_resource_uuid"/>
+</InputElement>
+<InputElement logentry="true" name="_context_user_id">
+<InputData action="0" format="" name="_context_user_id"/>
+</InputElement>
+<InputElement logentry="true" name="payload">
+<InputData action="0" format="" name="Ignore"/>
+<InputElement logentry="true" name="state_description">
+<InputData action="0" format="" name="state_description"/>
+</InputElement>
+<InputElement logentry="true" name="availability_zone">
+<InputData action="0" format="" name="availability_zone"/>
+</InputElement>
+<InputElement logentry="true" name="terminated_at">
+<InputData action="0" format="" name="terminated_at"/>
+</InputElement>
+<InputElement logentry="true" name="ephemeral_gb">
+<InputData action="0" format="" name="ephemeral_gb"/>
+</InputElement>
+<InputElement logentry="true" name="instance_type_id">
+<InputData action="0" format="" name="instance_type_id"/>
+</InputElement>
+<InputElement logentry="true" name="bandwidth">
+<InputData action="0" format="" name="bandwidth"/>
+</InputElement>
+<InputElement logentry="true" name="deleted_at">
+<InputData action="0" format="" name="deleted_at"/>
+</InputElement>
+<InputElement logentry="true" name="reservation_id">
+<InputData action="0" format="" name="reservation_id"/>
+</InputElement>
+<InputElement logentry="true" name="instance_id">
+<InputData action="0" format="" name="instance_id"/>
+</InputElement>
+<InputElement logentry="true" name="display_name">
+<InputData action="0" format="" name="display_name"/>
+</InputElement>
+<InputElement logentry="true" name="hostname">
+<InputData action="0" format="" name="vm_name"/>
+</InputElement>
+<InputElement logentry="true" name="state">
+<InputData action="0" format="" name="state"/>
+</InputElement>
+<InputElement logentry="true" name="old_state">
+<InputData action="0" format="" name="old_state"/>
+</InputElement>
+<InputElement logentry="true" name="progress">
+<InputData action="0" format="" name="progress"/>
+</InputElement>
+<InputElement logentry="true" name="launched_at">
+<InputData action="0" format="" name="launched_at"/>
+</InputElement>
+<InputElement logentry="true" name="metadata">
+<InputData action="0" format="" name="metadata"/>
+</InputElement>
+<InputElement logentry="true" name="node">
+<InputData action="0" format="" name="node"/>
+</InputElement>
+<InputElement logentry="true" name="ramdisk_id">
+<InputData action="0" format="" name="ramdisk_id"/>
+</InputElement>
+<InputElement logentry="true" name="access_ip_v6">
+<InputData action="0" format="" name="access_ip_v6"/>
+</InputElement>
+<InputElement logentry="true" name="disk_gb">
+<InputData action="0" format="" name="disk_gb"/>
+</InputElement>
+<InputElement logentry="true" name="access_ip_v4">
+<InputData action="0" format="" name="access_ip_v4"/>
+</InputElement>
+<InputElement logentry="true" name="kernel_id">
+<InputData action="0" format="" name="kernel_id"/>
+</InputElement>
+<InputElement logentry="true" name="host">
+<InputData action="0" format="" name="host"/>
+</InputElement>
+<InputElement logentry="true" name="user_id">
+<InputData action="0" format="" name="user_id"/>
+</InputElement>
+<InputElement logentry="true" name="image_ref_url">
+<InputData action="0" format="" name="image_ref_url"/>
+</InputElement>
+<InputElement logentry="true" name="cell_name">
+<InputData action="0" format="" name="cell_name"/>
+</InputElement>
+<InputElement logentry="true" name="audit_period_beginning">
+<InputData action="0" format="" name="audit_period_beginning"/>
+</InputElement>
+<InputElement logentry="true" name="root_gb">
+<InputData action="0" format="" name="root_gb"/>
+</InputElement>
+<InputElement logentry="true" name="tenant_id">
+<InputData action="0" format="" name="tenant_id"/>
+</InputElement>
+<InputElement logentry="true" name="created_at">
+<InputData action="0" format="" name="created_at"/>
+</InputElement>
+<InputElement logentry="true" name="old_task_state">
+<InputData action="0" format="" name="old_task_state"/>
+</InputElement>
+<InputElement logentry="true" name="memory_mb">
+<InputData action="0" format="" name="memory_mb"/>
+</InputElement>
+<InputElement logentry="true" name="instance_type">
+<InputData action="0" format="" name="instance_type"/>
+</InputElement>
+<InputElement logentry="true" name="vcpus">
+<InputData action="0" format="" name="vcpus"/>
+</InputElement>
+<InputElement logentry="true" name="image_meta">
+<InputData action="0" format="" name="Ignore"/>
+<InputElement logentry="true" name="kernel_id">
+<InputData action="0" format="" name="kernel_id"/>
+</InputElement>
+<InputElement logentry="true" name="container_format">
+<InputData action="0" format="" name="container_format"/>
+</InputElement>
+<InputElement logentry="true" name="min_ram">
+<InputData action="0" format="" name="min_ram"/>
+</InputElement>
+<InputElement logentry="true" name="ramdisk_id">
+<InputData action="0" format="" name="ramdisk_id"/>
+</InputElement>
+<InputElement logentry="true" name="disk_format">
+<InputData action="0" format="" name="disk_format"/>
+</InputElement>
+<InputElement logentry="true" name="min_disk">
+<InputData action="0" format="" name="min_disk"/>
+</InputElement>
+<InputElement logentry="true" name="base_image_ref">
+<InputData action="0" format="" name="base_image_ref"/>
+</InputElement>
+</InputElement>
+<InputElement logentry="true" name="architecture">
+<InputData action="0" format="" name="architecture"/>
+</InputElement>
+<InputElement logentry="true" name="new_task_state">
+<InputData action="0" format="" name="new_task_state"/>
+</InputElement>
+<InputElement logentry="true" name="audit_period_ending">
+<InputData action="0" format="" name="audit_period_ending"/>
+</InputElement>
+<InputElement logentry="true" name="os_type">
+<InputData action="0" format="" name="os_type"/>
+</InputElement>
+<InputElement logentry="true" name="instance_flavor_id">
+<InputData action="0" format="" name="instance_flavor_id"/>
+</InputElement>
+</InputElement>
+<InputElement logentry="true" name="_context_show_deleted">
+<InputData action="0" format="" name="_context_show_deleted"/>
+</InputElement>
+<InputElement logentry="true" name="priority">
+<InputData action="0" format="" name="priority"/>
+</InputElement>
+<InputElement logentry="true" name="_context_is_admin">
+<InputData action="0" format="" name="_context_is_admin"/>
+</InputElement>
+<InputElement logentry="true" name="_context_project_domain">
+<InputData action="0" format="" name="_context_project_domain"/>
+</InputElement>
+<InputElement logentry="true" name="_context_timestamp">
+<InputData action="0" format="" name="_context_timestamp"/>
+</InputElement>
+<InputElement logentry="true" name="publisher_id">
+<InputData action="0" format="" name="publisher_id"/>
+</InputElement>
+<InputElement logentry="true" name="message_id">
+<InputData action="0" format="" name="message_id"/>
+</InputElement>
+<InputElement logentry="true" name="_context_remote_address">
+<InputData action="0" format="" name="_context_remote_address"/>
+</InputElement>
+<InputElement logentry="true" name="_context_roles">
+<InputData action="0" format="" name="_context_roles"/>
+</InputElement>
+<InputElement logentry="true" name="timestamp">
+<InputData action="0" format="yyyy-MM-dd HH:mm:ss.SSSSSS" name="Time Stamp"/>
+</InputElement>
+<InputElement logentry="true" name="_context_user">
+<InputData action="0" format="" name="_context_user"/>
+</InputElement>
+<InputElement logentry="true" name="_unique_id">
+<InputData action="0" format="" name="_unique_id"/>
+</InputElement>
+<InputElement logentry="true" name="_context_project_name">
+<InputData action="0" format="" name="_context_project_name"/>
+</InputElement>
+<InputElement logentry="true" name="_context_read_deleted">
+<InputData action="0" format="" name="_context_read_deleted"/>
+</InputElement>
+<InputElement logentry="true" name="_context_user_identity">
+<InputData action="0" format="" name="_context_user_identity"/>
+</InputElement>
+<InputElement logentry="true" name="_context_tenant">
+<InputData action="0" format="" name="_context_tenant"/>
+</InputElement>
+<InputElement logentry="true" name="_context_instance_lock_checked">
+<InputData action="0" format="" name="_context_instance_lock_checked"/>
+</InputElement>
+<InputElement logentry="true" name="_context_project_id">
+<InputData action="0" format="" name="_context_project_id"/>
+</InputElement>
+<InputElement logentry="true" name="_context_read_only">
+<InputData action="0" format="" name="_context_read_only"/>
+</InputElement>
+<InputElement logentry="true" name="_context_user_domain">
+<InputData action="0" format="" name="_context_user_domain"/>
+</InputElement>
+<InputElement logentry="true" name="_context_user_name">
+<InputData action="0" format="" name="_context_user_name"/>
+</InputElement>
+</InputElement>
+</InputElement>
+<OutputColumn name="host"/>
+<OutputColumn name="vm_name"/>
+<OutputColumn name="event_type"/>
+<OutputColumn name="priority"/>
+<OutputColumn name="state"/>
+<OutputColumn name="Time Stamp"/>
+<OutputColumn name="_context_request_id"/>
+<OutputColumn name="display_name"/>
+<OutputColumn name="_context_domain"/>
+<OutputColumn name="_context_quota_class"/>
+<OutputColumn name="_context_auth_token"/>
+<OutputColumn name="_context_user_id"/>
+<OutputColumn name="_context_resource_uuid"/>
+<OutputColumn name="memory_mb"/>
+<OutputColumn name="_context_is_admin"/>
+<OutputColumn name="_context_show_deleted"/>
+<OutputColumn name="_context_project_domain"/>
+<OutputColumn name="_context_timestamp"/>
+<OutputColumn name="publisher_id"/>
+<OutputColumn name="message_id"/>
+<OutputColumn name="_context_remote_address"/>
+<OutputColumn name="_context_roles"/>
+<OutputColumn name="_context_user"/>
+<OutputColumn name="_unique_id"/>
+<OutputColumn name="_context_project_name"/>
+<OutputColumn name="_context_read_deleted"/>
+<OutputColumn name="_context_user_identity"/>
+<OutputColumn name="_context_tenant"/>
+<OutputColumn name="_context_instance_lock_checked"/>
+<OutputColumn name="_context_project_id"/>
+<OutputColumn name="_context_read_only"/>
+<OutputColumn name="_context_user_name"/>
+<OutputColumn name="_context_user_domain"/>
+<OutputColumn name="adminURL"/>
+<OutputColumn name="region"/>
+<OutputColumn name="internalURL"/>
+<OutputColumn name="publicURL"/>
+<OutputColumn name="state_description"/>
+<OutputColumn name="type"/>
+<OutputColumn name="name"/>
+<OutputColumn name="terminated_at"/>
+<OutputColumn name="availability_zone"/>
+<OutputColumn name="ephemeral_gb"/>
+<OutputColumn name="bandwidth"/>
+<OutputColumn name="instance_type_id"/>
+<OutputColumn name="deleted_at"/>
+<OutputColumn name="reservation_id"/>
+<OutputColumn name="instance_id"/>
+<OutputColumn name="old_state"/>
+<OutputColumn name="progress"/>
+<OutputColumn name="launched_at"/>
+<OutputColumn name="metadata"/>
+<OutputColumn name="node"/>
+<OutputColumn name="ramdisk_id"/>
+<OutputColumn name="access_ip_v6"/>
+<OutputColumn name="disk_gb"/>
+<OutputColumn name="access_ip_v4"/>
+<OutputColumn name="kernel_id"/>
+<OutputColumn name="user_id"/>
+<OutputColumn name="image_ref_url"/>
+<OutputColumn name="cell_name"/>
+<OutputColumn name="audit_period_beginning"/>
+<OutputColumn name="root_gb"/>
+<OutputColumn name="tenant_id"/>
+<OutputColumn name="created_at"/>
+<OutputColumn name="old_task_state"/>
+<OutputColumn name="instance_type"/>
+<OutputColumn name="vcpus"/>
+<OutputColumn name="container_format"/>
+<OutputColumn name="min_ram"/>
+<OutputColumn name="disk_format"/>
+<OutputColumn name="min_disk"/>
+<OutputColumn name="base_image_ref"/>
+<OutputColumn name="architecture"/>
+<OutputColumn name="new_task_state"/>
+<OutputColumn name="audit_period_ending"/>
+<OutputColumn name="os_type"/>
+<OutputColumn name="instance_flavor_id"/>
+</Definition>
+</CustomXMLTraceDefinitionList>

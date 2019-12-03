@@ -1,0 +1,8 @@
+This doc contains script and parser to analyse nova notification message.
+
+1-eventlistener.py      ---------- listens to rabbitmq nova queue to receive the publish event and format them in xml
+the routing_key is set to notification.info, but to capture more event we use '#'
+
+
+#########################################################################################################
+2-xml_parser.xml        ---------- is used by tracecompass to parse the xml trace obtain from eventlistener.py

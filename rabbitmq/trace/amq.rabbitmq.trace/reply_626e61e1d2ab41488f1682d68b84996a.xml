@@ -1,0 +1,40 @@
+
+
+<event><_unique_id>
+	410da534bbf74c6faf48de0dd8434870
+</_unique_id>
+<failure>
+	None
+</failure>
+<result>
+	<host>
+		yves-G771JM
+	</host>
+	<nodename>
+		yves-G771JM
+	</nodename>
+	<limits>
+		<memory_mb>
+			17848.5
+		</memory_mb>
+	</limits>
+</result>
+<_msg_id>
+	e901d22cb52e444680fab37cea199412
+</_msg_id></event>
+
+<event><_unique_id>
+	27aba98a94844592a8b105ab80f52457
+</_unique_id>
+<failure>
+	None
+</failure>
+<ending>
+	True
+</ending>
+<result>
+	None
+</result>
+<_msg_id>
+	e901d22cb52e444680fab37cea199412
+</_msg_id></event>

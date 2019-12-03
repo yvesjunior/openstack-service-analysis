@@ -1,0 +1,10 @@
+name: migrate
+import: base
+roledefs:
+ controller: [ controller ]
+ compute: [ Compute ]
+execute:
+ - command: cd /home/yves/devstack; source openrc admin admin; nova live-migration vm-23405 Compute; sleep 30
+   roles: controller
+   method: foreground
+
